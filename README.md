@@ -1,25 +1,25 @@
-# Módulo 2: Angular & Spring Boot - Invoice Angular App  
+# Module 2: Angular & Spring Boot - Invoice Angular App
 
-Este repositorio contiene el trabajo realizado durante el **Módulo 2** del curso _"Angular & Spring Boot: Creando Webapp Full Stack"_. En este módulo, comenzamos a construir una aplicación de facturación (_Invoice Angular App_) y profundizamos en aspectos clave de TypeScript, Angular y estilos con Bootstrap.  
+This repository contains the work completed during **Module 2** of the course _"Angular & Spring Boot: Building a Full Stack Web App"_. In this module, we started building an invoicing application (_Invoice Angular App_) and explored key aspects of TypeScript, Angular, and Bootstrap styling.
 
-## 📝 Contenidos Aprendidos  
+## 📝 Topics Covered  
 
-En este módulo, abordamos los siguientes temas:  
+In this module, we focused on the following topics:
 
-### TypeScript y Angular  
-- **Creación de clases**: Definición y uso de clases en TypeScript para modelar datos.  
-- **Manejo de datos (_data_)**:  
-  - Creación de estructuras de datos para representar facturas e ítems.  
-  - Maquetación de datos para presentarlos en la aplicación.  
-- **Tipos de datos**: Profundizamos en conceptos clave de TypeScript, incluyendo tipos primitivos, objetos, arreglos y uso de _interfaces_.  
-- **Sub-componentes**:  
-  - Creación de componentes anidados para modularizar la funcionalidad y el diseño.  
-  - Implementación de un componente `form-item` para manejar los ítems de la factura.  
-
-### Estilos y Formularios  
-- **CSS con Bootstrap**: Uso de clases predefinidas para estilizar componentes y mejorar la experiencia del usuario.  
-- **Formularios en Angular**:  
-  - Creación y diseño de un formulario para capturar información de facturas.  
-  - Implementación de la funcionalidad de envío de formulario (_submit form_).  
+### TypeScript and Angular  
+- **Class Creation**: Defining and using TypeScript classes to model data.  
+- **Data Handling (_data_)**:  
+  - Creating data structures to represent invoices and items.
+  - Organizing data for presentation in the application. 
+- **Data Types**: Delving into TypeScript fundamentals, including primitive types, objects, arrays, and the use of _interfaces_. 
+- **Sub-components**:  
+  - Building nested components to modularize functionality and design. 
+  - Implementing a `form-item` component to manage invoice items.  
+  
+### Styling and Forms  
+- **CSS with Bootstrap**: Leveraging predefined classes to style components and enhance the user experience.  
+- **Angular Forms**:  
+  - Designing and implementing a form to capture invoice details. 
+  - Adding form submission functionality (_submit form_).
 
 
