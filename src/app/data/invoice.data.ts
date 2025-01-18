@@ -1,4 +1,6 @@
-export const invoiceData = {
+import { Invoice } from "../models/invoice";
+
+export const invoiceData : Invoice = {
     id: 1,
     name: 'PC component',
     client: {
