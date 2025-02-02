@@ -1,22 +1,77 @@
 <h3>New Item</h3>
 
-<form class="w-50" (ngSubmit)="onSubmit()">
+<form class="w-50" (ngSubmit)="onSubmit(itemForm)" #itemForm="ngForm">
 
     <input name="product" 
     placeholder="Product" 
     class="form-control m-3"
-    [(ngModel)]="item.product">
+    [(ngModel)]="item.product"
+    required minlength="5"
+    #product="ngModel">
+
+
+    @if (product.invalid && (product.dirty || product.touched)){
+        @if (product.errors!['required']){
+            <div class="text-danger mx-3">
+                Name of product is required.
+            </div>
+        }
+
+        @if(product.errors!['minlegth']){
+            <div class="text-danger mx-3">
+                Name of product must have at least 5 characters.
+            </div>
+        }
+    }
 
     <input name="price" 
+    type="number"
     placeholder="Price" 
     class="form-control m-3"
-    [(ngModel)]="item.price">
+    [(ngModel)]="item.price"
+    required min="10"
+    #price="ngModel">
+
+
+    @if (price.invalid && (price.dirty || price.touched)){
+        @if (price.errors!['required']){
+            <div class="text-danger mx-3">
+                Price is required.
+            </div>
+        }
+
+        @if(price.errors!['min']){
+            <div class="text-danger mx-3">
+                Price must be more than 10.
+            </div>
+        }
+    }
 
     <input name="quantity" 
+    type="number"
     placeholder="Quantity" 
     class="form-control m-3"
-    [(ngModel)]="item.quantity">
+    [(ngModel)]="item.quantity"
+    required min="1"
+    #quantity="ngModel">
 
-    <button class="btn btn-primary m3">New Item</button>
+    @if (quantity.invalid && (quantity.dirty || quantity.touched)){
+        @if (quantity.errors!['required']){
+            <div class="text-danger mx-3">
+                Quantity is required.
+            </div>
+        }
+
+        @if(quantity.errors!['min']){
+            <div class="text-danger mx-3">
+                Quantity must have minimum 1.
+            </div>
+        }
+    }
+
+
+    <button class="btn btn-primary m3" [disabled]="itemForm.invalid">
+        New Item
+    </button>
 
 </form>
